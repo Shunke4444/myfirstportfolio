@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+
+:root {
+     --bg: #f5f8ff;
+  --panel: #ffffff;
+  --text: #0f172a;
+  --muted: #4b5563;
+  --accent: #4aa2e6;
+  --accent-strong: #2f7dc3;
+  --border: rgba(15, 23, 42, 0.08);
+  --shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+  --section-a: #eff5ff;
+  --section-b: #ffffff;
+  --surface: rgba(255, 255, 255, 0.7);
+  --surface-strong: rgba(255, 255, 255, 0.85);
+  --input: rgba(255, 255, 255, 0.95);
+  --skill-track: rgba(74, 162, 230, 0.22);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+}
+
+.site-header {
+    background-color: #b4b4b4;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+
+}
+
+
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    width: min(1100px, calc(100% - 40px));
+    width: 100vw;
+    padding: 1rem 0 1.25rem;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+
+.section {
+    padding: 4rem 0;
+}
+
+#home.section{
+    padding: 2.5rem 0;
+}
+
+
+.hero{
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+.eyebrow {
+    margin: 0 0 0 7.5rem;
+    color: var(--accent );
+    text-transform: uppercase;
+    letter-spacing: 0.8rem;
+}
+
+h1,
+h2,
+h3,
+p
+{
+    margin-top: 0;
+}
+
+
+
+.hero-photo {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-photo img {
+    width: min(360px, 100%);
+    /* max-width: 10px; */
+    border-radius: 5%;
+}
+
+
+.button{
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--accent);
+    color: rgb(255, 255, 255);
+    /* width: 10rem; */
+    /* text-align: start; */
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+
